@@ -33,7 +33,7 @@ module.exports = function (api) {
   // })
   
   api.loadSource(async actions => {
-    const { data } = await axios.get('http://hrbdev.localhost/posts')
+    const { data } = await axios.get('https://steady-cucurucho-85d3a2.netlify.app/posts')
     var posts
     const collection = actions.addCollection({
       typeName: 'BlogPosts'
