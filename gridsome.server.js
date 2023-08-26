@@ -33,8 +33,15 @@ module.exports = function (api) {
   // })
   
   api.loadSource(async actions => {
+    var payload={
+      auth: { 
+        "username":"admin",
+        "password":"2aL8DgbkxM3ggID",
+      }
+    }
+
     //const { data } = await axios.get('http://hrbdev.localhost/posts')
-    const { data } = await axios.get('https://hospitable-turkey-staging.cl-us-east-5.servd.dev/posts')
+    const { data } = await axios.get('https://hospitable-turkey-staging.cl-us-east-5.servd.dev/posts', payload)
     var posts
     const collection = actions.addCollection({
       typeName: 'BlogPosts'
