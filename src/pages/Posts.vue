@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1>Blog Posts</h1>
+    <h1>Blog Posts...</h1>
     <strong>
         <ul>
           <li v-for="edge in $page.posts.edges" :key="edge.node.id">
